@@ -1,0 +1,35 @@
+[
+  {
+    "id": 101,
+    "name": "web",
+    "labels": {
+      "dns.infrastructure.test/host": "web",
+      "dns.infrastructure.test/host.records": "A_AAAA",
+      "dns.infrastructure.test/app.name": "app",
+      "dns.infrastructure.test/app.ipv6": "1-2",
+      "dns.infrastructure.test/app.cname": "portal"
+    },
+    "public_net": {
+      "ipv4": {
+        "ip": "192.0.2.10"
+      },
+      "ipv6": {
+        "ip": "2001:db8:1::/64"
+      }
+    }
+  },
+  {
+    "id": 102,
+    "name": "worker",
+    "labels": {
+      "dns.infrastructure.test/host": "worker",
+      "dns.infrastructure.test/host.records": "AAAA"
+    },
+    "public_net": {
+      "ipv4": null,
+      "ipv6": {
+        "ip": "2001:db8:2::/64"
+      }
+    }
+  }
+]

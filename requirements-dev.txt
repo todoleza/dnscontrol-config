@@ -1,0 +1,2 @@
+# Only repo validation and local export need this; direct DNSControl does not.
+dnspython==2.8.0

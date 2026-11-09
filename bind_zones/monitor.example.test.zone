@@ -1,0 +1,6 @@
+$TTL 300
+; generated with dnscontrol 2026-11-09T23:06:25+01:00
+@                IN SOA   default_not_set. default_not_set. 2026110900 3600 600 604800 1440
+nodes            IN A     192.0.2.80
+                 IN A     192.0.2.81
+                 IN AAAA  2001:db8:80::1

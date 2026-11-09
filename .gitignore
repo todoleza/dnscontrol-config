@@ -1,0 +1,14 @@
+# Local credentials and authentication files.
+creds.json
+.secrets/
+.env
+.envrc
+.env.*
+!.env.example
+# Tools, environments, and transient output.
+.tools/
+.venv/
+build/
+__pycache__/
+*.py[cod]
+*.log

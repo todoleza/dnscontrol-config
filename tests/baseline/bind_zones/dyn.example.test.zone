@@ -1,0 +1,6 @@
+$TTL 3600
+; generated with dnscontrol 2026-11-09T23:06:36+01:00
+@          300   IN SOA   default_not_set. default_not_set. 2026110900 3600 600 604800 1440
+                 IN TXT   "v=spf1 -all"
+_dmarc           IN TXT   "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;"
+*._domainkey     IN TXT   "v=DKIM1; p="

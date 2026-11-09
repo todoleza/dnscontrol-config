@@ -1,0 +1,15 @@
+$TTL 3600
+; generated with dnscontrol 2026-11-09T23:06:25+01:00
+@          300   IN SOA   default_not_set. default_not_set. 2026110900 3600 600 604800 1440
+           300   IN NS    ns.lab.example.test.
+mail             IN MX    10 mx1.simplelogin.co.
+                 IN MX    20 mx2.simplelogin.co.
+                 IN TXT   "v=spf1 include:simplelogin.co ~all"
+dkim._domainkey.mail IN CNAME dkim._domainkey.simplelogin.co.
+dkim02._domainkey.mail IN CNAME dkim02._domainkey.simplelogin.co.
+dkim03._domainkey.mail IN CNAME dkim03._domainkey.simplelogin.co.
+ns         300   IN A     192.0.2.53
+photos     600   IN A     192.0.2.10
+           600   IN AAAA  2001:db8:1::1
+resolvers  120   IN A     192.0.2.53
+           120   IN A     192.0.2.54

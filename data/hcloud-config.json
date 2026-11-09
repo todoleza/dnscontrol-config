@@ -1,0 +1,14 @@
+{
+  "web": {
+    "server_id": 101,
+    "roles": {
+      "dns": {
+        "ipv6_suffix": "53",
+        "ipv4": true
+      }
+    }
+  },
+  "worker": {
+    "server_id": 102
+  }
+}

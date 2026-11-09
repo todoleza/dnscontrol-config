@@ -1,0 +1,9 @@
+{
+  "none": {"TYPE": "NONE"},
+  "bind": {"TYPE": "BIND", "directory": "bind_zones", "_exclude_from_defaults": "true"},
+  "cloudflare": {"TYPE": "CLOUDFLAREAPI", "apitoken": "$CLOUDFLARE_API_TOKEN"},
+  "cloudns": {"TYPE": "CLOUDNS", "sub-auth-id": "$CLOUDNS_SUB_AUTH_ID", "auth-password": "$CLOUDNS_AUTH_PASSWORD"},
+  "desec": {"TYPE": "DESEC", "auth-token": "$DESEC_TOKEN"},
+  "desec_iot": {"TYPE": "DESEC", "auth-token": "$DESEC_IOT_TOKEN"},
+  "hetzner": {"TYPE": "HETZNER_V2", "api_token": "$HCLOUD_TOKEN"}
+}

@@ -1,0 +1,10 @@
+$TTL 300
+; generated with dnscontrol 2026-11-09T23:06:25+01:00
+@                IN SOA   default_not_set. default_not_set. 2026110900 3600 600 604800 1440
+app              IN AAAA  2001:db8:1::1:2
+portal           IN CNAME app.infrastructure.test.
+resolver   600   IN A     192.0.2.10
+           600   IN AAAA  2001:db8:1::53
+web              IN A     192.0.2.10
+                 IN AAAA  2001:db8:1::1
+worker           IN AAAA  2001:db8:2::1

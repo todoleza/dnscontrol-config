@@ -1,0 +1,52 @@
+{
+  "hosts": {
+    "web": {
+      "dns": {
+        "ipv4": "192.0.2.10",
+        "ipv6": "2001:db8:1::53"
+      },
+      "ipv4": "192.0.2.10",
+      "ipv6": "2001:db8:1::1"
+    },
+    "worker": {
+      "ipv6": "2001:db8:2::1"
+    }
+  },
+  "records": [
+    {
+      "name": "app",
+      "type": "AAAA",
+      "values": [
+        "2001:db8:1::1:2"
+      ]
+    },
+    {
+      "name": "portal",
+      "type": "CNAME",
+      "values": [
+        "app.infrastructure.test."
+      ]
+    },
+    {
+      "name": "web",
+      "type": "A",
+      "values": [
+        "192.0.2.10"
+      ]
+    },
+    {
+      "name": "web",
+      "type": "AAAA",
+      "values": [
+        "2001:db8:1::1"
+      ]
+    },
+    {
+      "name": "worker",
+      "type": "AAAA",
+      "values": [
+        "2001:db8:2::1"
+      ]
+    }
+  ]
+}

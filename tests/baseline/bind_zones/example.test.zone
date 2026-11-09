@@ -1,0 +1,22 @@
+$TTL 300
+; generated with dnscontrol 2026-11-09T23:06:36+01:00
+@                IN SOA   default_not_set. default_not_set. 2026110900 3600 600 604800 1440
+           3600  IN MX    10 mail.protonmail.ch.
+           3600  IN MX    20 mailsec.protonmail.ch.
+                 IN TXT   "example-verification=REPLACE_ME"
+           3600  IN TXT   "v=spf1 include:_spf.protonmail.ch mx ~all"
+                 IN CAA   0 issue "letsencrypt.org"
+_dmarc           IN TXT   "v=DMARC1; p=reject; rua=mailto:reports@example.test"
+protonmail._domainkey 3600 IN CNAME protonmail.domainkey.example-key.domains.proton.ch.
+protonmail2._domainkey 3600 IN CNAME protonmail2.domainkey.example-key.domains.proton.ch.
+protonmail3._domainkey 3600 IN CNAME protonmail3.domainkey.example-key.domains.proton.ch.
+dyn              IN NS    ns1.example.net.
+lab              IN NS    ns.lab.example.test.
+ns.lab           IN A     192.0.2.53
+monitor          IN NS    ns1.example.net.
+office     600   IN A     198.51.100.10
+           600   IN AAAA  2001:db8:100::10
+photos     600   IN A     192.0.2.10
+           600   IN AAAA  2001:db8:1::1
+www              IN A     192.0.2.10
+                 IN AAAA  2001:db8:1::1

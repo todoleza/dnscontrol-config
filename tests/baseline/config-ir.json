@@ -1,0 +1,486 @@
+{
+  "dns_providers": [
+    {
+      "name": "bind",
+      "type": "-"
+    }
+  ],
+  "domains": [
+    {
+      "dnsProviders": {
+        "bind": -1
+      },
+      "meta": {
+        "cloudflare_proxy_default": "off",
+        "cloudflare_universalssl": "off"
+      },
+      "name": "dyn.example.test",
+      "records": [
+        {
+          "filepos": "[line:21:1]",
+          "name": "@",
+          "target": "v=spf1 -all",
+          "ttl": 3600,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "*._domainkey",
+          "target": "v=DKIM1; p=",
+          "ttl": 3600,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "_dmarc",
+          "target": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;",
+          "ttl": 3600,
+          "type": "TXT"
+        }
+      ],
+      "registrar": "none",
+      "uniquename": "dyn.example.test",
+      "unmanaged": [
+        {
+          "label_pattern": "@",
+          "rType_pattern": "DNSKEY",
+          "target_pattern": "*"
+        },
+        {
+          "label_pattern": "client",
+          "rType_pattern": "A",
+          "target_pattern": "*"
+        }
+      ]
+    },
+    {
+      "dnsProviders": {
+        "bind": -1
+      },
+      "meta": {
+        "cloudflare_proxy_default": "off",
+        "cloudflare_universalssl": "off"
+      },
+      "name": "example.test",
+      "records": [
+        {
+          "filepos": "[line:21:1]",
+          "name": "www",
+          "target": "192.0.2.10",
+          "ttl": 300,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "www",
+          "target": "2001:db8:1::1",
+          "ttl": 300,
+          "type": "AAAA"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "office",
+          "target": "198.51.100.10",
+          "ttl": 600,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "office",
+          "target": "2001:db8:100::10",
+          "ttl": 600,
+          "type": "AAAA"
+        },
+        {
+          "caatag": "issue",
+          "filepos": "[line:21:1]",
+          "name": "@",
+          "target": "letsencrypt.org",
+          "ttl": 300,
+          "type": "CAA"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "@",
+          "target": "example-verification=REPLACE_ME",
+          "ttl": 300,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "mxpreference": 10,
+          "name": "@",
+          "target": "mail.protonmail.ch.",
+          "ttl": 3600,
+          "type": "MX"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "mxpreference": 20,
+          "name": "@",
+          "target": "mailsec.protonmail.ch.",
+          "ttl": 3600,
+          "type": "MX"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "protonmail._domainkey",
+          "target": "protonmail.domainkey.example-key.domains.proton.ch.",
+          "ttl": 3600,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "protonmail2._domainkey",
+          "target": "protonmail2.domainkey.example-key.domains.proton.ch.",
+          "ttl": 3600,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "protonmail3._domainkey",
+          "target": "protonmail3.domainkey.example-key.domains.proton.ch.",
+          "ttl": 3600,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "@",
+          "target": "v=spf1 include:_spf.protonmail.ch mx ~all",
+          "ttl": 3600,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "_dmarc",
+          "target": "v=DMARC1; p=reject; rua=mailto:reports@example.test",
+          "ttl": 300,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "lab",
+          "target": "ns.lab.example.test.",
+          "ttl": 300,
+          "type": "NS"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "ns.lab",
+          "target": "192.0.2.53",
+          "ttl": 300,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "dyn",
+          "target": "ns1.example.net.",
+          "ttl": 300,
+          "type": "NS"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "monitor",
+          "target": "ns1.example.net.",
+          "ttl": 300,
+          "type": "NS"
+        },
+        {
+          "filepos": "[line:22:1]",
+          "name": "photos",
+          "target": "192.0.2.10",
+          "ttl": 600,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:22:1]",
+          "name": "photos",
+          "target": "2001:db8:1::1",
+          "ttl": 600,
+          "type": "AAAA"
+        }
+      ],
+      "registrar": "none",
+      "uniquename": "example.test",
+      "unmanaged": [
+        {
+          "label_pattern": "@",
+          "rType_pattern": "DNSKEY",
+          "target_pattern": "*"
+        }
+      ]
+    },
+    {
+      "dnsProviders": {
+        "bind": -1
+      },
+      "meta": {
+        "cloudflare_proxy_default": "off",
+        "cloudflare_universalssl": "off"
+      },
+      "name": "infrastructure.test",
+      "records": [
+        {
+          "filepos": "[line:21:1]",
+          "name": "app",
+          "target": "2001:db8:1::1:2",
+          "ttl": 300,
+          "type": "AAAA"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "portal",
+          "target": "app.infrastructure.test.",
+          "ttl": 300,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "web",
+          "target": "192.0.2.10",
+          "ttl": 300,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "web",
+          "target": "2001:db8:1::1",
+          "ttl": 300,
+          "type": "AAAA"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "worker",
+          "target": "2001:db8:2::1",
+          "ttl": 300,
+          "type": "AAAA"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "resolver",
+          "target": "192.0.2.10",
+          "ttl": 600,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "resolver",
+          "target": "2001:db8:1::53",
+          "ttl": 600,
+          "type": "AAAA"
+        }
+      ],
+      "registrar": "none",
+      "uniquename": "infrastructure.test",
+      "unmanaged": [
+        {
+          "label_pattern": "@",
+          "rType_pattern": "DNSKEY",
+          "target_pattern": "*"
+        }
+      ]
+    },
+    {
+      "dnsProviders": {
+        "bind": -1
+      },
+      "meta": {
+        "cloudflare_proxy_default": "off",
+        "cloudflare_universalssl": "off"
+      },
+      "name": "lab.example.test",
+      "nameservers": [
+        {
+          "name": "ns.lab.example.test"
+        }
+      ],
+      "records": [
+        {
+          "filepos": "[line:21:1]",
+          "name": "ns",
+          "target": "192.0.2.53",
+          "ttl": 300,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "resolvers",
+          "target": "192.0.2.53",
+          "ttl": 120,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "resolvers",
+          "target": "192.0.2.54",
+          "ttl": 120,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "mxpreference": 10,
+          "name": "mail",
+          "target": "mx1.simplelogin.co.",
+          "ttl": 3600,
+          "type": "MX"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "mxpreference": 20,
+          "name": "mail",
+          "target": "mx2.simplelogin.co.",
+          "ttl": 3600,
+          "type": "MX"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "dkim._domainkey.mail",
+          "target": "dkim._domainkey.simplelogin.co.",
+          "ttl": 3600,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "dkim02._domainkey.mail",
+          "target": "dkim02._domainkey.simplelogin.co.",
+          "ttl": 3600,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "dkim03._domainkey.mail",
+          "target": "dkim03._domainkey.simplelogin.co.",
+          "ttl": 3600,
+          "type": "CNAME"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "mail",
+          "target": "v=spf1 include:simplelogin.co ~all",
+          "ttl": 3600,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:22:1]",
+          "name": "photos",
+          "target": "192.0.2.10",
+          "ttl": 600,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:22:1]",
+          "name": "photos",
+          "target": "2001:db8:1::1",
+          "ttl": 600,
+          "type": "AAAA"
+        }
+      ],
+      "registrar": "none",
+      "uniquename": "lab.example.test",
+      "unmanaged": [
+        {
+          "label_pattern": "@",
+          "rType_pattern": "DNSKEY",
+          "target_pattern": "*"
+        }
+      ]
+    },
+    {
+      "dnsProviders": {
+        "bind": -1
+      },
+      "meta": {
+        "cloudflare_proxy_default": "off",
+        "cloudflare_universalssl": "off"
+      },
+      "name": "monitor.example.test",
+      "records": [
+        {
+          "filepos": "[line:21:1]",
+          "name": "nodes",
+          "target": "192.0.2.80",
+          "ttl": 300,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "nodes",
+          "target": "192.0.2.81",
+          "ttl": 300,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "nodes",
+          "target": "2001:db8:80::1",
+          "ttl": 300,
+          "type": "AAAA"
+        }
+      ],
+      "registrar": "none",
+      "uniquename": "monitor.example.test",
+      "unmanaged": [
+        {
+          "label_pattern": "@",
+          "rType_pattern": "DNSKEY",
+          "target_pattern": "*"
+        }
+      ]
+    },
+    {
+      "dnsProviders": {
+        "bind": -1
+      },
+      "meta": {
+        "cloudflare_proxy_default": "off",
+        "cloudflare_universalssl": "off"
+      },
+      "name": "parked.test",
+      "records": [
+        {
+          "filepos": "[line:21:1]",
+          "name": "@",
+          "target": "203.0.113.10",
+          "ttl": 3600,
+          "type": "A"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "@",
+          "target": "v=spf1 -all",
+          "ttl": 3600,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "*._domainkey",
+          "target": "v=DKIM1; p=",
+          "ttl": 3600,
+          "type": "TXT"
+        },
+        {
+          "filepos": "[line:21:1]",
+          "name": "_dmarc",
+          "target": "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;",
+          "ttl": 3600,
+          "type": "TXT"
+        }
+      ],
+      "registrar": "none",
+      "uniquename": "parked.test",
+      "unmanaged": [
+        {
+          "label_pattern": "@",
+          "rType_pattern": "DNSKEY",
+          "target_pattern": "*"
+        }
+      ]
+    }
+  ],
+  "registrars": [
+    {
+      "name": "none",
+      "type": "-"
+    }
+  ]
+}
